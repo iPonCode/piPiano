@@ -7,12 +7,12 @@
 //
 
 import UIKit
-//import AVFoundation //necesario para reproducir sonido (usaremos un UIAVPlayer)
+import AVFoundation //necesario para reproducir sonido (usaremos un UIAVPlayer)
 
 class ViewController: UIViewController {
     
     //Tendré que crear un AudioPlayer para cada sonido así que necesito una variable
-    //var audioPlayer : AVAudioPlayer! //es un requerido
+    var audioPlayer : AVAudioPlayer! //es un requerido
     
     let soundsNames = ["c1","c1s","d1","d1s","e1","f1","f1s","g1","g1s","a1","a1s","b1","c2"]
 
@@ -30,8 +30,18 @@ class ViewController: UIViewController {
         print("-> Se ha SOLTADO la tecla >>> \(tagKeyPressed) <<< >>> \(fileName)")
         
         //necestio conocer la URL del archivo en disco que contiene el sonido mp3 que quiero reproducir, utilizo bundle que es una representación en código de todos los recursos en disco de la aplicacion, pasándole el nombre del recurso obtenermos la URL del mismo
-        if let soundURL = Bundle.main.url(forResource: "c1", withExtension: "mp3"){
-        print("-> la URL del archivo es:\n >>> \(soundURL) <<< ")}
+        //necesitamos el if-let porque el parámetro del bundle es opcional, así nos aseguramos que si no lo puede obtener por lo que sea no se ejecuta la linea
+        if let soundURL : URL = Bundle.main.url(forResource: fileName, withExtension: "mp3"){
+            print("-> la URL del archivo es:\n >>> \(soundURL) <<< ")
+            //le indicamos que haga "do": intenta "try" cargar el sonido de la URL y en caso de que no puedas capturamos el error con "catch"
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            } catch {
+                //error no lo he declarado, en el caso del catch se genera automáticamente, la genera el constructor
+                print(error)
+            }
+            audioPlayer.play() //finalmente reproducimos el sonido
+        }
     }
     
     @IBAction func TouchDownPlay(_ sender: UIButton) {
