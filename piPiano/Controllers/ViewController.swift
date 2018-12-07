@@ -7,8 +7,12 @@
 //
 
 import UIKit
+//import AVFoundation //necesario para reproducir sonido (usaremos un UIAVPlayer)
 
 class ViewController: UIViewController {
+    
+    //Tendré que crear un AudioPlayer para cada sonido así que necesito una variable
+    //var audioPlayer : AVAudioPlayer! //es un requerido
     
     let soundsNames = ["c1","c1s","d1","d1s","e1","f1","f1s","g1","g1s","a1","a1s","b1","c2"]
 
@@ -24,6 +28,10 @@ class ViewController: UIViewController {
         let tagKeyPressed = sender.tag
         let fileName = soundsNames[tagKeyPressed - 1]
         print("-> Se ha SOLTADO la tecla >>> \(tagKeyPressed) <<< >>> \(fileName)")
+        
+        //necestio conocer la URL del archivo en disco que contiene el sonido mp3 que quiero reproducir, utilizo bundle que es una representación en código de todos los recursos en disco de la aplicacion, pasándole el nombre del recurso obtenermos la URL del mismo
+        if let soundURL = Bundle.main.url(forResource: "c1", withExtension: "mp3"){
+        print("-> la URL del archivo es:\n >>> \(soundURL) <<< ")}
     }
     
     @IBAction func TouchDownPlay(_ sender: UIButton) {
