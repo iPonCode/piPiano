@@ -12,6 +12,19 @@
 		D0A9FF2C21B9FCB600AB51F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */; };
 		D0A9FF2E21B9FCB900AB51F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */; };
 		D0A9FF3121B9FCB900AB51F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */; };
+		D0A9FF7E21BA0D2600AB51F0 /* g1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7121BA0D2600AB51F0 /* g1.mp3 */; };
+		D0A9FF7F21BA0D2600AB51F0 /* c2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7221BA0D2600AB51F0 /* c2.mp3 */; };
+		D0A9FF8021BA0D2600AB51F0 /* a1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7321BA0D2600AB51F0 /* a1.mp3 */; };
+		D0A9FF8121BA0D2600AB51F0 /* c1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7421BA0D2600AB51F0 /* c1.mp3 */; };
+		D0A9FF8221BA0D2600AB51F0 /* b1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7521BA0D2600AB51F0 /* b1.mp3 */; };
+		D0A9FF8321BA0D2600AB51F0 /* e1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7621BA0D2600AB51F0 /* e1.mp3 */; };
+		D0A9FF8421BA0D2600AB51F0 /* d1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7721BA0D2600AB51F0 /* d1s.mp3 */; };
+		D0A9FF8521BA0D2600AB51F0 /* c1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7821BA0D2600AB51F0 /* c1s.mp3 */; };
+		D0A9FF8621BA0D2600AB51F0 /* g1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7921BA0D2600AB51F0 /* g1s.mp3 */; };
+		D0A9FF8721BA0D2600AB51F0 /* f1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7A21BA0D2600AB51F0 /* f1.mp3 */; };
+		D0A9FF8821BA0D2600AB51F0 /* a1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7B21BA0D2600AB51F0 /* a1s.mp3 */; };
+		D0A9FF8921BA0D2600AB51F0 /* f1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7C21BA0D2600AB51F0 /* f1s.mp3 */; };
+		D0A9FF8A21BA0D2600AB51F0 /* d1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7D21BA0D2600AB51F0 /* d1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +35,19 @@
 		D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A9FF3021B9FCB900AB51F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A9FF3221B9FCB900AB51F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A9FF7121BA0D2600AB51F0 /* g1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = g1.mp3; path = sonidos/g1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7221BA0D2600AB51F0 /* c2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = c2.mp3; path = sonidos/c2.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7321BA0D2600AB51F0 /* a1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = a1.mp3; path = sonidos/a1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7421BA0D2600AB51F0 /* c1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = c1.mp3; path = sonidos/c1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7521BA0D2600AB51F0 /* b1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = b1.mp3; path = sonidos/b1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7621BA0D2600AB51F0 /* e1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = e1.mp3; path = sonidos/e1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7721BA0D2600AB51F0 /* d1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = d1s.mp3; path = sonidos/d1s.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7821BA0D2600AB51F0 /* c1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = c1s.mp3; path = sonidos/c1s.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7921BA0D2600AB51F0 /* g1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = g1s.mp3; path = sonidos/g1s.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7A21BA0D2600AB51F0 /* f1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = f1.mp3; path = sonidos/f1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7B21BA0D2600AB51F0 /* a1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = a1s.mp3; path = sonidos/a1s.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7C21BA0D2600AB51F0 /* f1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = f1s.mp3; path = sonidos/f1s.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF7D21BA0D2600AB51F0 /* d1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = d1.mp3; path = sonidos/d1.mp3; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +80,51 @@
 		D0A9FF2521B9FCB500AB51F0 /* piPiano */ = {
 			isa = PBXGroup;
 			children = (
-				D0A9FF2621B9FCB500AB51F0 /* AppDelegate.swift */,
-				D0A9FF2821B9FCB500AB51F0 /* ViewController.swift */,
-				D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */,
+				D0A9FF3821B9FD0200AB51F0 /* Controllers */,
+				D0A9FF3921B9FD3400AB51F0 /* StoryBoards */,
+				D0A9FF7021BA0D0300AB51F0 /* Sounds */,
 				D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */,
-				D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */,
 				D0A9FF3221B9FCB900AB51F0 /* Info.plist */,
 			);
 			path = piPiano;
+			sourceTree = "<group>";
+		};
+		D0A9FF3821B9FD0200AB51F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF2621B9FCB500AB51F0 /* AppDelegate.swift */,
+				D0A9FF2821B9FCB500AB51F0 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D0A9FF3921B9FD3400AB51F0 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */,
+				D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		D0A9FF7021BA0D0300AB51F0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF7321BA0D2600AB51F0 /* a1.mp3 */,
+				D0A9FF7B21BA0D2600AB51F0 /* a1s.mp3 */,
+				D0A9FF7521BA0D2600AB51F0 /* b1.mp3 */,
+				D0A9FF7421BA0D2600AB51F0 /* c1.mp3 */,
+				D0A9FF7821BA0D2600AB51F0 /* c1s.mp3 */,
+				D0A9FF7221BA0D2600AB51F0 /* c2.mp3 */,
+				D0A9FF7D21BA0D2600AB51F0 /* d1.mp3 */,
+				D0A9FF7721BA0D2600AB51F0 /* d1s.mp3 */,
+				D0A9FF7621BA0D2600AB51F0 /* e1.mp3 */,
+				D0A9FF7A21BA0D2600AB51F0 /* f1.mp3 */,
+				D0A9FF7C21BA0D2600AB51F0 /* f1s.mp3 */,
+				D0A9FF7121BA0D2600AB51F0 /* g1.mp3 */,
+				D0A9FF7921BA0D2600AB51F0 /* g1s.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +185,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A9FF8921BA0D2600AB51F0 /* f1s.mp3 in Resources */,
+				D0A9FF8721BA0D2600AB51F0 /* f1.mp3 in Resources */,
+				D0A9FF8621BA0D2600AB51F0 /* g1s.mp3 in Resources */,
+				D0A9FF7F21BA0D2600AB51F0 /* c2.mp3 in Resources */,
+				D0A9FF8521BA0D2600AB51F0 /* c1s.mp3 in Resources */,
+				D0A9FF8121BA0D2600AB51F0 /* c1.mp3 in Resources */,
+				D0A9FF7E21BA0D2600AB51F0 /* g1.mp3 in Resources */,
+				D0A9FF8421BA0D2600AB51F0 /* d1s.mp3 in Resources */,
 				D0A9FF3121B9FCB900AB51F0 /* LaunchScreen.storyboard in Resources */,
+				D0A9FF8A21BA0D2600AB51F0 /* d1.mp3 in Resources */,
+				D0A9FF8821BA0D2600AB51F0 /* a1s.mp3 in Resources */,
 				D0A9FF2E21B9FCB900AB51F0 /* Assets.xcassets in Resources */,
+				D0A9FF8321BA0D2600AB51F0 /* e1.mp3 in Resources */,
+				D0A9FF8021BA0D2600AB51F0 /* a1.mp3 in Resources */,
 				D0A9FF2C21B9FCB600AB51F0 /* Main.storyboard in Resources */,
+				D0A9FF8221BA0D2600AB51F0 /* b1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQUGBU2U53;
 				INFOPLIST_FILE = piPiano/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +380,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQUGBU2U53;
 				INFOPLIST_FILE = piPiano/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
