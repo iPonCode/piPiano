@@ -25,6 +25,7 @@
 		D0A9FF8821BA0D2600AB51F0 /* a1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7B21BA0D2600AB51F0 /* a1s.mp3 */; };
 		D0A9FF8921BA0D2600AB51F0 /* f1s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7C21BA0D2600AB51F0 /* f1s.mp3 */; };
 		D0A9FF8A21BA0D2600AB51F0 /* d1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF7D21BA0D2600AB51F0 /* d1.mp3 */; };
+		D0A9FF8C21BA167D00AB51F0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D0A9FF7B21BA0D2600AB51F0 /* a1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = a1s.mp3; path = sonidos/a1s.mp3; sourceTree = SOURCE_ROOT; };
 		D0A9FF7C21BA0D2600AB51F0 /* f1s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = f1s.mp3; path = sonidos/f1s.mp3; sourceTree = SOURCE_ROOT; };
 		D0A9FF7D21BA0D2600AB51F0 /* d1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = d1.mp3; path = sonidos/d1.mp3; sourceTree = SOURCE_ROOT; };
+		D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				D0A9FF2621B9FCB500AB51F0 /* AppDelegate.swift */,
 				D0A9FF2821B9FCB500AB51F0 /* ViewController.swift */,
+				D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A9FF2921B9FCB500AB51F0 /* ViewController.swift in Sources */,
+				D0A9FF8C21BA167D00AB51F0 /* Extensions.swift in Sources */,
 				D0A9FF2721B9FCB500AB51F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
