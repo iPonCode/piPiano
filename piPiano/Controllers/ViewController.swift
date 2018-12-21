@@ -14,7 +14,7 @@ import AVFoundation //necesario para reproducir sonido (usaremos un UIAVPlayer)
 class ViewController: UIViewController {
     
     //Tendré que crear un AudioPlayer para cada sonido así que necesito una variable
-    var audioPlayer : AVAudioPlayer! //es un requerido
+    var audioPlayer : AVAudioPlayer! //es requerido
     
     let soundsNames = ["c1","c1s","d1","d1s","e1","f1","f1s","g1","g1s","a1","a1s","b1","c2"]
 
