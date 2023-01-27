@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     //Tendré que crear un AudioPlayer para cada sonido así que necesito una variable
     var audioPlayer : AVAudioPlayer! //es un requerido
     
-    let soundsNames = ["c1","c1s","d1","d1s","e1","f1","f1s","g1","g1s","a1","a1s","b1","c2"]
+    let soundsNames = ["c3","c3s","d3","d3s","e3","f3","f3s","g3","g3s","a3","a3s","b3","c4"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         //necestio conocer la URL del archivo en disco que contiene el sonido mp3 que quiero reproducir, utilizo bundle que es una representación en código de todos los recursos en disco de la aplicacion, pasándole el nombre del recurso obtenermos la URL del mismo
         //necesitamos el if-let porque el parámetro del bundle es opcional, así nos aseguramos que si no lo puede obtener por lo que sea no se ejecuta la linea
-        if let soundURL : URL = Bundle.main.url(forResource: fileName, withExtension: "mp3"){
+        if let soundURL : URL = Bundle.main.url(forResource: fileName, withExtension: "wav"){
             print("-> la URL del archivo es:\n >>> \(soundURL) <<< ")
             //le indicamos que haga "do": intenta "try" cargar el sonido de la URL y en caso de que no puedas capturamos el error con "catch"
             do{
