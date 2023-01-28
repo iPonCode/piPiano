@@ -27,16 +27,11 @@ class ViewController: UIViewController {
     //para que funcione para todos y cada uno de los botones, una vez hayamos arrastrado con ctrl pulsado el primer botón para dejarlo configurado creando la Action para ese botón, entonces vamos arrastando también con ctrl pulsado cada uno de los botones que queramos (son 13 en total) hasta  esta misma función soltándolos en el código dijándonos bien en que aparezca un mensaje que indica "Connect Action" y NO el de "Insert Action, Outlet.."
     //para comprobar que están hechas las 13 conexiones correspondientes a cada botón o tecla del piano, posicionamos el cursor del ratón encima del número de línea del código correspondiente con la declaración de la función "@IBAction func" (en lugar del núero de línea aparece una bolita con un signo + en el interior) y en el StoryBoard se deben marcar todos los elementos conectados.
     @IBAction func TouchUpInsidePlay(_ sender: UIButton) {
-        let indexOfKeyPressed = sender.tag - 1
-        guard !soundsNames.isEmpty,
-              0 <= indexOfKeyPressed,
-              indexOfKeyPressed < soundsNames.count else { return }
-        let fileName = soundsNames[indexOfKeyPressed]
-        print("-> Se ha SOLTADO la tecla >>> con tag: \(sender.tag) <<< >>> nombre: \(fileName)")
+        guard let name = printKeyPressed("SOLTADO", tag: sender.tag) else { return }
 
         //necestio conocer la URL del archivo en disco que contiene el sonido mp3 que quiero reproducir, utilizo bundle que es una representación en código de todos los recursos en disco de la aplicacion, pasándole el nombre del recurso obtenermos la URL del mismo
         //necesitamos el if-let porque el parámetro del bundle es opcional, así nos aseguramos que si no lo puede obtener por lo que sea no se ejecuta la linea
-        if let soundURL : URL = Bundle.main.url(forResource: fileName, withExtension: "wav"){
+        if let soundURL : URL = Bundle.main.url(forResource: name, withExtension: "wav"){
             print("-> la URL del archivo es:\n >>> \(soundURL) <<< ")
             //le indicamos que haga "do": intenta "try" cargar el sonido de la URL y en caso de que no puedas capturamos el error con "catch"
             do{
@@ -50,12 +45,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func TouchDownPlay(_ sender: UIButton) {
-        let indexOfKeyPressed = sender.tag - 1
-        guard !soundsNames.isEmpty,
-              0 <= indexOfKeyPressed,
-              indexOfKeyPressed < soundsNames.count else { return }
-        let fileName = soundsNames[indexOfKeyPressed]
-        print("-> Se ha PULSADO la tecla >>> con tag: \(sender.tag) <<< >>> nombre: \(fileName)")
+        printKeyPressed("PULSADO", tag: sender.tag)
     }
 }
 
+private extension ViewController {
+    func getIndexFromTag(_ buttonTag: Int) -> Int? {
+        buttonTag > 0 ? buttonTag - 1 : nil
+    }
+    @discardableResult
+    func printKeyPressed(_ event: String, tag: Int) -> String? {
+        guard let index = getIndexFromTag(tag),
+              let name = soundsNames[safe: index] else { return nil }
+        print("-> Se ha \(event) tecla con tag: \(tag) y nombre: \(name).")
+        return name
+    }
+}

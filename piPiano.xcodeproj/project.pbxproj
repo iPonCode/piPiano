@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D058A3662984710000F4DC1B /* Array+SafeAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058A3652984710000F4DC1B /* Array+SafeAccess.swift */; };
 		D091E3D7298442E200AF951C /* d3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D091E3CA298442DF00AF951C /* d3.wav */; };
 		D091E3D8298442E200AF951C /* f3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D091E3CB298442DF00AF951C /* f3.wav */; };
 		D091E3D9298442E200AF951C /* e3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D091E3CC298442DF00AF951C /* e3.wav */; };
@@ -25,10 +26,11 @@
 		D0A9FF2C21B9FCB600AB51F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */; };
 		D0A9FF2E21B9FCB900AB51F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */; };
 		D0A9FF3121B9FCB900AB51F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */; };
-		D0A9FF8C21BA167D00AB51F0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */; };
+		D0A9FF8C21BA167D00AB51F0 /* UIButton+IBDesibnable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A9FF8B21BA167D00AB51F0 /* UIButton+IBDesibnable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D058A3652984710000F4DC1B /* Array+SafeAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeAccess.swift"; sourceTree = "<group>"; };
 		D091E3CA298442DF00AF951C /* d3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d3.wav; sourceTree = "<group>"; };
 		D091E3CB298442DF00AF951C /* f3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = f3.wav; sourceTree = "<group>"; };
 		D091E3CC298442DF00AF951C /* e3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = e3.wav; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A9FF3021B9FCB900AB51F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A9FF3221B9FCB900AB51F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D0A9FF8B21BA167D00AB51F0 /* UIButton+IBDesibnable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+IBDesibnable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +65,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D091E3C82984428500AF951C /* Resources */ = {
+		D058A3622984705300F4DC1B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D058A36729848D4F00F4DC1B /* App */,
+				D058A3632984709A00F4DC1B /* Common */,
+				D058A36829848D5B00F4DC1B /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D058A3632984709A00F4DC1B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D058A364298470A200F4DC1B /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D058A364298470A200F4DC1B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF8B21BA167D00AB51F0 /* UIButton+IBDesibnable.swift */,
+				D058A3652984710000F4DC1B /* Array+SafeAccess.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D058A36729848D4F00F4DC1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF2621B9FCB500AB51F0 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D058A36829848D5B00F4DC1B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D058A36929848D6200F4DC1B /* Keyboard */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		D058A36929848D6200F4DC1B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF2821B9FCB500AB51F0 /* ViewController.swift */,
+				D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		D091E3C82984428500AF951C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */,
 				D091E3C92984429500AF951C /* Sounds */,
 			);
-			path = Resources;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D091E3C92984429500AF951C /* Sounds */ = {
@@ -110,8 +165,8 @@
 		D0A9FF2521B9FCB500AB51F0 /* piPiano */ = {
 			isa = PBXGroup;
 			children = (
-				D091E3C82984428500AF951C /* Resources */,
-				D0A9FF3821B9FD0200AB51F0 /* Controllers */,
+				D058A3622984705300F4DC1B /* Source */,
+				D091E3C82984428500AF951C /* Resource */,
 				D0A9FF3921B9FD3400AB51F0 /* StoryBoards */,
 				D0A9FF2D21B9FCB900AB51F0 /* Assets.xcassets */,
 				D0A9FF3221B9FCB900AB51F0 /* Info.plist */,
@@ -119,21 +174,9 @@
 			path = piPiano;
 			sourceTree = "<group>";
 		};
-		D0A9FF3821B9FD0200AB51F0 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D0A9FF2621B9FCB500AB51F0 /* AppDelegate.swift */,
-				D0A9FF2821B9FCB500AB51F0 /* ViewController.swift */,
-				D0A9FF8B21BA167D00AB51F0 /* Extensions.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		D0A9FF3921B9FD3400AB51F0 /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				D0A9FF2A21B9FCB600AB51F0 /* Main.storyboard */,
-				D0A9FF2F21B9FCB900AB51F0 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -222,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D058A3662984710000F4DC1B /* Array+SafeAccess.swift in Sources */,
 				D0A9FF2921B9FCB500AB51F0 /* ViewController.swift in Sources */,
-				D0A9FF8C21BA167D00AB51F0 /* Extensions.swift in Sources */,
+				D0A9FF8C21BA167D00AB51F0 /* UIButton+IBDesibnable.swift in Sources */,
 				D0A9FF2721B9FCB500AB51F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
