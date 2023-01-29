@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,21 +14,28 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-piPiano" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-ze-l22">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piPiano-LaunchScreen-90rotated-noalpha" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-ze-l22">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="piPiano is loading…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXt-P4-M3m">
+                                <rect key="frame" x="83" y="245.5" width="154" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="OFN-ze-l22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Buo-f8-9Ex"/>
-                            <constraint firstItem="OFN-ze-l22" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HWy-4j-GDM"/>
-                            <constraint firstItem="OFN-ze-l22" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OBw-hy-xiE"/>
-                            <constraint firstAttribute="bottom" secondItem="OFN-ze-l22" secondAttribute="bottom" id="PZe-aN-N4C"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VXt-P4-M3m" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.9" id="83b-mC-3Yf"/>
+                            <constraint firstItem="OFN-ze-l22" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HWy-4j-GDM"/>
+                            <constraint firstAttribute="bottom" secondItem="OFN-ze-l22" secondAttribute="bottom" id="PZe-aN-N4C"/>
+                            <constraint firstItem="OFN-ze-l22" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="eab-Wi-9T6"/>
+                            <constraint firstItem="OFN-ze-l22" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="j0d-Iu-it6"/>
+                            <constraint firstItem="VXt-P4-M3m" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yua-Dr-p8o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,6 +44,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash-piPiano" width="375" height="812"/>
+        <image name="piPiano-LaunchScreen-90rotated-noalpha" width="375" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
