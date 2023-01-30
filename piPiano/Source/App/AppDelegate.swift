@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  piPiano
 //
-//  Created by superw on 07/12/2018.
-//  Copyright © 2018 superw. All rights reserved.
+//  Created by iPonCode on 07/12/2018.
+//  Copyright © 2018 iPon.es All rights reserved.
 //
 
 import UIKit
